@@ -52,7 +52,9 @@ class _CustomListTile extends StatelessWidget {
       ),
       title: Text(currentItem.title),
       subtitle: Text(currentItem.subtitle),
-      onTap: () {},
+      onTap: () {
+        //TODO: NAVEGACION A OTRA PANTALLAS
+      },
     );
   }
 }

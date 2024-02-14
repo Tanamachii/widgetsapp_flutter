@@ -58,7 +58,7 @@ class _AppTutorialScreenState extends State<AppTutorialScreen> {
         });
       }
       setState(() {
-        currentIndex = pageViewController.page!.round();
+        currentIndex = page.round();
       });
     });
   }

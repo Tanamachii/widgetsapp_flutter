@@ -63,4 +63,16 @@ const appMenuItems = <MenuItem>[
     url: '/infinite',
     icon: Icons.medical_information_outlined,
   ),
+  MenuItem(
+    title: 'Contador',
+    subtitle: 'Contador usando riverpod',
+    url: '/counter',
+    icon: Icons.add,
+  ),
+  MenuItem(
+    title: 'Theme Changer',
+    subtitle: 'Cambios de temas de la app',
+    url: '/themechanger',
+    icon: Icons.color_lens_outlined,
+  ),
 ];

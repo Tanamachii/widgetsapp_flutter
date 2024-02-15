@@ -105,32 +105,30 @@ class _AppTutorialScreenState extends State<AppTutorialScreen> {
                   ),
                 )
               : const SizedBox(),
-          Positioned(
-            child: Align(
-              alignment: Alignment.bottomCenter,
-              child: Padding(
-                padding: const EdgeInsets.only(bottom: 200.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: slides.asMap().entries.map((entry) {
-                    int index = entry.key;
+          Align(
+            alignment: Alignment.center,
+            child: Padding(
+              padding: const EdgeInsets.only(top: 500),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: slides.asMap().entries.map((entry) {
+                  int index = entry.key;
 
-                    return Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: CircleAvatar(
-                        radius: 8.0,
-                        backgroundColor: index == currentIndex
-                            ? colors
-                                .primary // Color cuando la imagen está seleccionada
-                            : colors
-                                .secondary, // Color cuando la imagen no está seleccionada
-                      ),
-                    );
-                  }).toList(),
-                ),
+                  return Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: CircleAvatar(
+                      radius: 8.0,
+                      backgroundColor: index == currentIndex
+                          ? colors
+                              .primary // Color cuando la imagen está seleccionada
+                          : colors
+                              .secondary, // Color cuando la imagen no está seleccionada
+                    ),
+                  );
+                }).toList(),
               ),
             ),
-          )
+          ),
         ],
       ),
     );

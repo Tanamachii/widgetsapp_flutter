@@ -73,7 +73,6 @@ class _AppTutorialScreenState extends State<AppTutorialScreen> {
   Widget build(BuildContext context) {
     final colors = Theme.of(context).colorScheme;
     return Scaffold(
-      backgroundColor: Colors.white,
       body: Stack(
         children: [
           PageView(
